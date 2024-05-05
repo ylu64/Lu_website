@@ -1,0 +1,56 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2024-05-05T19:13:50-04:00"
+    },
+    {
+      "path": "dear_data.html",
+      "title": "My Dear Data",
+      "description": "This is my Dear Data. The front of the postcard shows my artistic illustration of my one-week before-sleep activities, while the back explains how to read my illustration.\n",
+      "author": [
+        {
+          "name": "Yingyu Lu",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nIllustration\nThe frontHow to read my illustration?\nThe backReflection\nThrough my Dear Data project, I became more aware of time management. I learned that my work time is sometimes clustered at night. I often spent a lot of time working before going to sleep, whether it was schoolwork or housework. Data collection and visualization helped me realize what was happening around me at the time and discover my own pace and patterns in a vivid way. My goal was to learn about my own habits and possibly improve my sleep quality and schedule. It was easy to identify patterns in my datasets because I used colors and signs to separate activities.\nMy favorite part of the project was visualizing the data in an artistic way. It took creativity and careful thought to map out the variables and tell a story, which was very different from my usual experience with data visualization using software. It was refreshing to think outside the box and adopt a more creative perspective.\nRecording every activity I did was challenging because some events were too miscellaneous to remember. If I had another opportunity to redo the Dear Data project, I would focus on tracking just one activity, such as the time I spend working. This would make it easier to keep track of and record more details.\n\n\n\n",
+      "last_modified": "2024-05-05T19:13:51-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Lu's Website",
+      "description": "Welcome to the website. Hope you enjoy it!\n",
+      "author": [],
+      "contents": "\nBelow is a glimpse of my multivariate plot, which utilizes data from the National Health and Nutrition Examination Survey (NHANES).\nThe box plot presents an analysis of the Healthy Eating Index (HEI) across three levels of physical activity, stratified by gender. The data is sourced from the NHANES 2017-2018 survey cycle and includes 2,284 participants aged 50 and above. The study examines the relationship between dietary quality and physical activity and explores potential gender-specific patterns. HEI scores are compared across physical activity levels categorized as High, Medium, and Low, and segregated by gender to identify disparities. The findings indicate median HEI scores are in the 50-60 range across all physical activity levels for both genders. Importantly, dietary quality, as measured by the HEI, shows improvement with increased physical activity and is consistently higher in females than in males across all categories. Further research is warranted to confirm these relationships. These results underscore the importance of promoting physical activity to improve dietary habits and suggest the need for strategies that specifically address gender disparities in dietary quality.\n\n\n\n\n\n\n",
+      "last_modified": "2024-05-05T19:13:54-04:00"
+    },
+    {
+      "path": "new_about.html",
+      "title": "Yingyu Lu",
+      "author": [],
+      "contents": "\n\n          \n          \n          My Website for Data Visualization\n          \n          \n          Home\n          About\n          My Shiny App\n          My Dear Data\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Yingyu Lu\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Instagram\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Bio\n            I’m a passionate data analyst specializing in\n            epidemiology and biostatistic, with a flair for turning data\n            into compelling stories through visualization. Armed with a\n            Master’s degree from Tufts University and a BA from the\n            University of Washington, I’ve honed my skills in SAS,\n            Stata, and R to peel back the layers of complex diet-disease\n            relationships. Let’s connect and explore how we can\n            collaborate to make a sustainable world through the power of\n            data.\n            Fun fact about me? I bake when I feel\n            stressed:)\n            If you have any questions or would like to connect, feel\n            free to reach out via email: yanglu0123@outlook.com.\n            \n            \n            Education\n            Tufts University | Boston, MA\n            M.S. in Nutrition Epidemiology and Data Science | August\n            2022 - May 2024\n            University of Washington | Seattle,\n            WA\n            B.A. in Food Systems, Nutrition, and Health | September\n            2018 - June 2022\n            \n            \n            Experience\n            Think Healthy Group | Data Analyst |\n            June 2023 - Present\n            Tufts University, School of Medicine |\n            Research Assistant | April 2023 - January 2024\n            Youshan Zuhe | Research Assistant | June\n            2021 - September 2021\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Yingyu Lu\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Instagram\n                    \n                  \n                                  \n              \n            \n            \n              \n              Bio\n              I’m a passionate data analyst specializing in\n              epidemiology and biostatistic, with a flair for turning\n              data into compelling stories through visualization. Armed\n              with a Master’s degree from Tufts University and a BA from\n              the University of Washington, I’ve honed my skills in SAS,\n              Stata, and R to peel back the layers of complex\n              diet-disease relationships. Let’s connect and explore how\n              we can collaborate to make a sustainable world through the\n              power of data.\n              Fun fact about me? I bake when I feel\n              stressed:)\n              If you have any questions or would like to connect,\n              feel free to reach out via email: yanglu0123@outlook.com.\n              \n              \n              Education\n              Tufts University | Boston, MA\n              M.S. in Nutrition Epidemiology and Data Science |\n              August 2022 - May 2024\n              University of Washington | Seattle,\n              WA\n              B.A. in Food Systems, Nutrition, and Health | September\n              2018 - June 2022\n              \n              \n              Experience\n              Think Healthy Group | Data Analyst |\n              June 2023 - Present\n              Tufts University, School of Medicine |\n              Research Assistant | April 2023 - January 2024\n              Youshan Zuhe | Research Assistant |\n              June 2021 - September 2021\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2024-05-05T19:27:21-04:00"
+    },
+    {
+      "path": "shiny_app.html",
+      "title": "Run an Analysis",
+      "description": "The following app will navigate you to build regression models from two continuous variables of your interest, using HERS data.\n",
+      "author": [
+        {
+          "name": "Yingyu Lu, Xiaoou Su",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\n\nThe app layout was designed for simplicity and user interaction, allowing users to select numerical and categorical variables for analysis with an age filter for granularity, letting users examine trends within specific age brackets. Alternative ideas might have included more complex statistical analysis options, multivariate analysis, or visualizations such as histograms or box plots. However, these were not chosen because the primary goal was to keep the app straightforward and focused on revealing straightforward relationships between two variables at a time, augmented by a categorical filter.\n\n\n\n",
+      "last_modified": "2024-05-05T19:14:00-04:00"
+    }
+  ],
+  "collections": []
+}

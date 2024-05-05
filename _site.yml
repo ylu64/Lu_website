@@ -1,0 +1,17 @@
+name: "Lu_website"
+title: "My Website for Data Visualization"
+theme: my_theme.css
+description: |
+  My Website for Data Visualization
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: new_about.html
+    - text: "My Shiny App"
+      href: shiny_app.html
+    - text: "My Dear Data"
+      href: dear_data.html
+output: distill::distill_article

@@ -1,0 +1,71 @@
+---
+title: "Lu's Website"
+description: |
+  Welcome to the website. Hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+# Set global options
+knitr::opts_chunk$set(echo = FALSE)
+
+# Load necessary packages
+library(ggplot2)
+library(dplyr)
+```
+
+Below is a glimpse of my multivariate plot, which utilizes data from the [National Health and Nutrition Examination Survey](https://www.cdc.gov/nchs/nhanes/index.htm) (NHANES). 
+
+The box plot presents an analysis of the Healthy Eating Index (HEI) across three levels of physical activity, stratified by gender. The data is sourced from the NHANES 2017-2018 survey cycle and includes 2,284 participants aged 50 and above. The study examines the relationship between dietary quality and physical activity and explores potential gender-specific patterns. HEI scores are compared across physical activity levels categorized as High, Medium, and Low, and segregated by gender to identify disparities. The findings indicate median HEI scores are in the 50-60 range across all physical activity levels for both genders. Importantly, dietary quality, as measured by the HEI, shows improvement with increased physical activity and is consistently higher in females than in males across all categories. Further research is warranted to confirm these relationships. These results underscore the importance of promoting physical activity to improve dietary habits and suggest the need for strategies that specifically address gender disparities in dietary quality.
+
+
+```{r}
+# Load the dataset
+multi <- read.csv('multi.csv')
+
+# Prepare the color palette
+cbPalette <- c("#0072B2", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#E69F00", "#D55E00", "#CC79A7")
+
+# Subset the dataset for the box plot
+plot_pa <- na.omit(multi[c('hei', 'RIAGENDR', 'active')])
+
+# Convert to factor variables
+plot_pa$active <- factor(plot_pa$active, levels = c("1", "2", "3"))
+plot_pa$RIAGENDR <- factor(plot_pa$RIAGENDR, levels = c(1, 2), labels = c("Male", "Female"))
+
+# Calculate the sample size for each gender
+sample_size <- plot_pa %>%
+  group_by(RIAGENDR) %>%
+  summarize(SampleSize_Gender = n())
+
+# Add gender labels with sample size
+plot_pa$GenderLabel <- with(
+  plot_pa,
+  paste(RIAGENDR, "[", sample_size$SampleSize_Gender[match(RIAGENDR, sample_size$RIAGENDR)], "]", sep = "")
+)
+
+# Create the box plot
+box <- ggplot(plot_pa, aes(x = active, y = hei, fill = GenderLabel)) +
+  geom_boxplot() +
+  scale_fill_manual(values = cbPalette) +
+  labs(
+    title = "Healthy Eating Index across Physical Activity Levels by Gender [n=2,284]",
+    x = "Physical Activity Level",
+    y = "HEI",
+    fill = "Gender"
+  ) +
+  scale_x_discrete(labels = c("1" = "Low [714]", "2" = "Medium [324]", "3" = "High [1246]")) +
+  theme_minimal() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.background = element_rect(fill = "white", colour = NA)
+  ) +
+  geom_vline(xintercept = c(1.5, 2.5), color = "grey", linetype = "dotted", size = 0.5)
+
+# Print the box plot
+box
+```
+
+
+

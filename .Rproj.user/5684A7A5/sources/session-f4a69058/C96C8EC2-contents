@@ -1,0 +1,22 @@
+---
+title: "Run an Analysis"
+description: |
+  The following app will navigate you to build regression models from two continuous variables of your interest, using HERS data.
+author:
+  - name: Yingyu Lu, Xiaoou Su 
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<iframe src="https://ylu53.shinyapps.io/shiny_analysis_hw6/" class="l-screen-inset shaded" height="800px"></iframe>
+
+The app layout was designed for simplicity and user interaction, allowing users to select numerical and categorical variables for analysis with an age filter for granularity, letting users examine trends within specific age brackets. Alternative ideas might have included more complex statistical analysis options, multivariate analysis, or visualizations such as histograms or box plots. However, these were not chosen because the primary goal was to keep the app straightforward and focused on revealing straightforward relationships between two variables at a time, augmented by a categorical filter. 
+
+
+
+
+

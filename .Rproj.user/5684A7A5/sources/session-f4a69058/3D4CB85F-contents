@@ -1,0 +1,34 @@
+---
+title: "My Dear Data"
+description: |
+  This is my Dear Data. The front of the postcard shows my artistic illustration of my one-week before-sleep activities, while the back explains how to read my illustration.
+author:
+  - name: Yingyu Lu
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Illustration**
+
+![The front](front.png)
+
+**How to read my illustration?**
+
+![The back](back.png)
+
+**Reflection**
+
+ Through my Dear Data project, I became more aware of time management. I learned that my work time is sometimes clustered at night. I often spent a lot of time working before going to sleep, whether it was schoolwork or housework. Data collection and visualization helped me realize what was happening around me at the time and discover my own pace and patterns in a vivid way. My goal was to learn about my own habits and possibly improve my sleep quality and schedule. It was easy to identify patterns in my datasets because I used colors and signs to separate activities.
+ 
+  My favorite part of the project was visualizing the data in an artistic way. It took creativity and careful thought to map out the variables and tell a story, which was very different from my usual experience with data visualization using software. It was refreshing to think outside the box and adopt a more creative perspective.
+  
+  Recording every activity I did was challenging because some events were too miscellaneous to remember. If I had another opportunity to redo the Dear Data project, I would focus on tracking just one activity, such as the time I spend working. This would make it easier to keep track of and record more details.
+
+
+
+
+
